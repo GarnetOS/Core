@@ -7,7 +7,8 @@ cd gmp-6.3.0
 ./configure --prefix=/usr    \
             --enable-cxx     \
             --disable-static \
-            --docdir=/usr/share/doc/gmp-6.3.0
+            --docdir=/usr/share/doc/gmp-6.3.0 \
+            --host=none-linux-gnu
 make
 make html
 make check 2>&1 | tee gmp-check-log
