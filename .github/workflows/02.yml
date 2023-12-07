@@ -104,7 +104,7 @@ jobs:
         run: |
                tar -czvf out.tar.gz VHD.img
                tar -tzf out.tar.gz >/dev/null
-      - uses: actions/upload-artifact@v2.3.1
+      - uses: actions/upload-artifact@v3
         with:
           name: out-${{matrix.arch}}-${{env.CURR}}
           path: out.tar.gz
